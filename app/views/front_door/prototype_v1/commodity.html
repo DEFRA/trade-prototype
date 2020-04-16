@@ -1,0 +1,35 @@
+{% extends "layout_app.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What are you trading?</h1>
+
+      <form class="form" action="commodity-confirm" method="post">
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Commodity code
+              <span class="govuk-hint">If you’re not sure of the commodity code, check <a href="https://www.gov.uk/guidance/finding-commodity-codes-for-imports-or-exports">how to find the right commodity code</a> .</span>
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="event-name" name="event-name" type="text">
+          </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
