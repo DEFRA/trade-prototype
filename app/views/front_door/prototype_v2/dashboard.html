@@ -1,0 +1,109 @@
+{% extends "layout_app.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Trade platform</h1>
+
+    </div>
+
+    <form class="form" action="commodity" method="post">
+        <div class="govuk-grid-column-two-thirds">    
+            <div class="govuk-form-group">
+                <button class="govuk-button" data-module="govuk-button">Start a new trade</button>
+            </div>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+            <div class="app-panel-dashboard">
+              <a class="app-text-right" href="#">Imports archive</a>
+                <h2 class="govuk-heading-m">Active imports</h2>
+                
+                <table class="govuk-table dash-table">
+                  
+                  <caption class="govuk-table__caption app-hidden">Active imports</caption>
+                  
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Reference number</th>
+                      <th scope="col" class="govuk-table__header">Commodity</th>
+                      <th scope="col" class="govuk-table__header">Consignee</th>
+                      <th scope="col" class="govuk-table__header">Arrival at BCP</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="#">CHEDP.GB.2019.1000011</a></td>
+                      <td class="govuk-table__cell">02045079</td>
+                      <td class="govuk-table__cell">East Ayrshire Council</td>
+                      <td class="govuk-table__cell">12 Dec 2019</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="#">CHEDD.GB.2019.1000012</a></td>
+                      <td class="govuk-table__cell">10064000</td>
+                      <td class="govuk-table__cell">C C SERVICE</td>
+                      <td class="govuk-table__cell">12 Dec 2019</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><a href="#">CHEDA.GB.2019.1000010</a></td>
+                      <td class="govuk-table__cell">0103</td>
+                      <td class="govuk-table__cell">Ammodytes Company Ltd</td>
+                      <td class="govuk-table__cell">14 Jan 2020</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-half">
+            <div class="app-panel-dashboard">
+              <a class="app-text-right" href="#">Exports archive</a>
+                <h2 class="govuk-heading-m">Active exports</h2>
+              <table class="govuk-table dash-table">
+                <caption class="govuk-table__caption app-hidden">Active Exports</caption>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Reference number</th>
+                    <th scope="col" class="govuk-table__header">Commodity</th>
+                    <th scope="col" class="govuk-table__header">Consignee</th>
+                    <th scope="col" class="govuk-table__header">Arrival at BCP</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><a href="#">CHEDP.GB.2019.1000011</a></td>
+                    <td class="govuk-table__cell">02045079</td>
+                    <td class="govuk-table__cell">East Ayrshire Council</td>
+                    <td class="govuk-table__cell">12 Dec 2019</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><a href="#">CHEDD.GB.2019.1000012</a></td>
+                    <td class="govuk-table__cell">10064000</td>
+                    <td class="govuk-table__cell">C C SERVICE</td>
+                    <td class="govuk-table__cell">12 Dec 2019</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><a href="#">CHEDA.GB.2019.1000010</a></td>
+                    <td class="govuk-table__cell">0103</td>
+                    <td class="govuk-table__cell">Ammodytes Company Ltd</td>
+                    <td class="govuk-table__cell">14 Jan 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </form>
+
+    </div>
+  </div>
+
+{% endblock %}
