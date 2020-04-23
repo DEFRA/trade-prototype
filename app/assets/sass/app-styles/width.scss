@@ -1,3 +1,10 @@
-.app-width-container {
-    @include govuk-width-container(1200px);
+.dash-width-container, .app-header__container {
+    @include govuk-width-container(1400px);
 }
+/*
+.app-width-container, .app-header__container {
+    max-width:100%;
+    margin-right:30px;
+    margin-left:30px;
+}
+*/
