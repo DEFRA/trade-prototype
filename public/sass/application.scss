@@ -21,6 +21,9 @@ $govuk-assets-path: '/govuk/assets/';
 @import "app-styles/typography";
 @import "app-styles/panels";    
 @import "app-styles/tables"; 
-@import "app-styles/width";    
+@import "app-styles/width";  
+
+//Google styles
+@import "app-styles/google.scss";  
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

@@ -32,27 +32,32 @@
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
-
+<!--
 {% block pageTitle %}
   GOV.UK Prototype Kit
 {% endblock %}
+-->
 
 {% block header %}
   <!--{% include "includes/cookie-banner.html" %}-->
   {# Set serviceName in config.js. #}
   {{ govukHeader({
     homepageUrl: "/",
-    
+    serviceName: serviceName,
     serviceUrl: "/",
-    containerClasses: "govuk-width-container"
+    containerClasses: "app-hidden",
+    mainClasses: "app-hidden"
   }) }}
 {% endblock %}
 
-{% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
+{% set mainClasses = mainClasses | default("google-width-wrapper") %}
+{% set containerClasses = containterClasses | default("google-width-wrapper") %}
 
 {% if useAutoStoreData %}
   {% block footer %}
+  <!--
     {{ govukFooter({
+      containerClasses: "app-hidden",
       meta: {
         items: [
           {
@@ -66,6 +71,7 @@
         ]
       }
     }) }}
+  -->
   {% endblock %}
 {% endif %}
 

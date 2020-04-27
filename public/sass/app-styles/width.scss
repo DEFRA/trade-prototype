@@ -1,6 +1,14 @@
 .dash-width-container, .app-header__container {
     @include govuk-width-container(1400px);
 }
+
+
+.google-width-wrapper, .google-width-container{
+    max-width:100%;
+    margin:0;
+    padding:0;
+}
+
 /*
 .app-width-container, .app-header__container {
     max-width:100%;

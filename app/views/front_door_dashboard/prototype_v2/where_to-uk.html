@@ -1,0 +1,39 @@
+{% extends "layout_app.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Where is the consignment going to?</h1>
+      <p>{{ data['country-from'] }}</p>
+      <form class="form" action="imports-task-list" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="sort">
+            Select country
+          </label>
+          <select class="govuk-select" id="sort" name="sort">
+              <option value="England">England</option>
+              <option value="Scotland">Scotland</option>
+              <option value="Wales">Wales</option>
+              <option value="Northern Ireland">Northern Ireland</option>
+          </select>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
