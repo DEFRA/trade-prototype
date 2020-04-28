@@ -26,8 +26,11 @@ router.post('/front_door_routing/prototype_v1/which_govuk_page', function(req, r
     
     let commodity = req.session.data['commodity-name']
 
-    if (commodity==="Molluscs") {
-        res.redirect('https://www.gov.uk/guidance/export-live-fish-and-shellfish-for-aquaculture-and-ornamental')
+    if (commodity==="Orchids") {
+        res.redirect('https://www.gov.uk/guidance/importing-plants-fruit-vegetables-or-plant-material-to-the-uk')
+    }
+    else if (commodity==="Salmon") {
+        res.redirect('https://www.gov.uk/guidance/exporting-and-importing-fish-if-theres-no-brexit-deal')
     }
     else if (commodity==="Horses") {
         res.redirect('https://www.gov.uk/guidance/export-horses-and-ponies-special-rules')
