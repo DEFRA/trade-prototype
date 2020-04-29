@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Sign in using Government Gateway</h1>
+
+      <form class="form" action="dashboard_v2" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+						 Government Gateway user ID
+						 <span class="govuk-hint">This could be up to 12 characters</span>
+					</label>
+          <input class="govuk-input govuk-input--width-20" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+					<label class="govuk-label" for="event-name">
+						Password
+					</label>
+        	<input class="govuk-input govuk-input--width-20" id="event-name" name="event-name" type="text">
+				</div>
+				
+				<button class="govuk-button" data-module="govuk-button">Sign in</button>
+				
+				<p>
+					<a href="#">Create sign in details</a>
+				</p>
+
+				<h2 class="govuk-heading-m">Problems signing in</h2>
+
+				<ul class="govuk-list"> 
+					<li><a href="/login/forgot-password" id="forgotten-password" data-ga-action="Forgot-Password" data-ga-category="Sign-In" data-ga-label="DEFRA">I have forgotten my password</a></li> 
+					<li><a href="/login/forgot-userid" id="forgotten-user-id" data-ga-action="Forgot-User-Id" data-ga-category="Sign-In" data-ga-label="DEFRA">I have forgotten my Government Gateway user ID</a></li> 
+					<li><a href="/login/forgot-userid-password" id="forgotten-user-id-password" data-ga-action="Forgot-User-Id-And-Password" data-ga-category="Sign-In" data-ga-label="DEFRA">I have forgotten my Government Gateway user ID and password</a></li> 
+				</ul>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

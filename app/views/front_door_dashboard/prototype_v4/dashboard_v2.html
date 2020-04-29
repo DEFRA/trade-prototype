@@ -1,0 +1,74 @@
+{% extends "layout_app--dashboard.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Dashboard</h1>
+
+    </div>
+  </div>
+  
+  <div class="govuk-grid-row app-dash--2">
+    <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-l app-panel--heading">Import notifications</h2>
+      <a href="ipaffs.html" class="govuk-button app-text-right" data-module="govuk-button">New import notification</a>
+      <div class="app-panel--container">
+        <p><a href="#">View all import notifications</a></p>
+   
+        <a href="#" class="app-panel">
+          <span class="app-panel-text--large">5</span>
+          Import notifications set to valid
+        </a>
+
+        <a href="#" class="app-panel app-panel--in-progress">
+          <span class="app-panel-text--large">12</span>
+          Import notifications set to in progress
+        </a>
+
+        <a href="#" class="app-panel app-panel--amend">
+          <span class="app-panel-text--large">2</span>
+          Import notifications require ammendment
+        </a>
+
+        <a href="#" class="app-panel app-panel--rejected">
+          <span class="app-panel-text--large">4</span>
+          Imports have been rejected
+        </a>
+
+      </div>
+      
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      
+      <h2 class="govuk-heading-l app-panel--heading">Export certificates</h2>
+      <a href="ehco.html" class="govuk-button app-text-right" data-module="govuk-button">New export certificate</a>
+      <div class="app-panel--container">
+        <p><a href="#">View all export certificates</a></p>
+        <a href="#" class="app-panel app-panel--processing">
+          <span class="app-panel-text--large">7</span>
+          Export certificates being processed
+        </a>
+        <a href="#" class="app-panel app-panel--rejected">
+          <span class="app-panel-text--large">3</span>
+          Export certificates have been rejected
+        </a>
+        <a href="#" class="app-panel app-panel--draft">
+          <span class="app-panel-text--large">13</span>
+          Export certificates are in draft
+        </a>
+      
+    </div>
+  </div>
+
+{% endblock %}

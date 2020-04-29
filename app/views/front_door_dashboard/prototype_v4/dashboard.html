@@ -1,0 +1,70 @@
+{% extends "layout_app--dashboard.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Dashboard</h1>
+
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <a href="export/commodity.html" class="govuk-button app-text-right" data-module="govuk-button">New certificate</a>
+      <h2 class="govuk-heading-l">Imports</h2>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half" >
+          <div class=" app-panel">
+            <a href="#">
+              <span class="app-panel-text--large">12</span>
+              Import notifications have been cleared
+            </a>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-half" >
+          <div class=" app-panel app-panel--error">
+            <a href="#">
+              <span class="app-panel-text--large">4</span>
+              Imports have been rejected
+            </a>
+          </div>
+        </div>
+      </div>
+      <p><br/><a href="#">View all import notifications</a></p>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <a href="export/commodity.html" class="govuk-button app-text-right" data-module="govuk-button">New certificate</a>
+      <h2 class="govuk-heading-l">Exports</h2>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half" >
+          <div class=" app-panel">
+            <a href="#">
+              <span class="app-panel-text--large">12</span>
+              Export certificates have been cleared
+            </a>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-half" >
+          <div class=" app-panel app-panel--error">
+            <a href="#">
+              <span class="app-panel-text--large">4</span>
+              Imports have been rejected
+            </a>
+          </div>
+        </div>
+      </div>
+      <p><br/><a href="#">View all export certificates</a></p>
+    </div>
+  </div>
+
+{% endblock %}
