@@ -53,3 +53,37 @@ router.post('/front_door_routing/prototype_v1/where_to-answer', function(req, re
     }
     
 });
+
+//Routes Routing Prototype V2
+
+router.post('/front_door_routing/prototype_v2/which_govuk_page', function(req, res) {
+    
+    let commodity = req.session.data['commodity-name']
+
+    if (commodity==="Orchids") {
+        res.redirect('/front_door_routing/prototype_v2/what_to_do-orchids')
+    }
+    else if (commodity==="Salmon") {
+        res.redirect('https://www.gov.uk/guidance/exporting-and-importing-fish-if-theres-no-brexit-deal')
+    }
+    else if (commodity==="Horses") {
+        res.redirect('https://www.gov.uk/guidance/export-horses-and-ponies-special-rules')
+    }
+    else{
+        res.redirect('https://www.gov.uk/guidance/export-live-animals-special-rules')
+    }
+    
+});
+
+router.post('/front_door_routing/prototype_v2/where_to-answer', function(req, res) {
+    
+    let where_from = req.session.data['country-from']
+
+    if (where_from==="Great Britain") {
+        res.redirect('/front_door_routing/prototype_v2/where_to-international')
+    }
+    else{
+        res.redirect('/front_door_routing/prototype_v2/where_to-uk')
+    }
+    
+});
