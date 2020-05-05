@@ -1,0 +1,62 @@
+{% extends "layout_app--google.html" %}
+
+{% block content %}
+
+<div class="google google-home">
+    <header>
+        <div id = "header-links-left">
+            <a id = "about-link" class = "text-link header-link" href = #>About</a>
+            <a id = "store-link" class = "text-link header-link" href = #>Store</a>
+        </div>
+        <div id = "header-links-right">
+            <a id = "gmail-link" class = "text-link header-link" href = #>Gmail</a>
+            <a id = "images-link" class = "text-link header-link" href = #>Images</a>
+            <a id = "apps-link" href = #>
+                <div id = "apps-button">
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                    <div class = "app-square"></div>
+                </div>
+            </a>
+            <button id = "sign-in-button">Sign in</button>
+        </div>
+    </header>
+    <main>
+        <form id = "content-container" action = "search-results.html">
+            <div id = "contents">
+                <img id = "big-logo" src = "../../../public/images/google/googlelogo.png" alt = "the google logo">
+                <div id = "search-bar">
+                    <div id = "search-icon"></div>
+                    <input id = "search-input-text" type = "text" name = "search query">
+                    <a id = "voice-input-link" href = #>
+                        <button id = "voice-input-button"></button>
+                    </a>
+                </div>
+                <div id = "search-button-container">
+                    <input type = "submit" id = "google-search-button" class = "search-button" value = "Google Search">
+                    <input type = "submit" id = "feeling-lucky" class = "search-button" value = "I'm Feeling Lucky">
+                </div>
+            </div>
+        </form>
+    
+        <footer>
+            <div id = "footer-links-left">
+                <a id = "advertising-link" class = "text-link footer-link" href = #>Advertising</a>
+                <a id = "business-link" class = "text-link footer-link" href = #>Business</a>
+                <a id = "how-search-works-link" class = "text-link footer-link" href = #>How Search Works</a>
+            </div>
+            <div id = "footer-links-right">
+                <a id = "privacy-link" class = "text-link footer-link" href = #>Privacy</a>
+                <a id = "terms-link" class = "text-link footer-link" href = #>Terms</a>
+                <a id = "settings-link" class = "text-link footer-link" href = #>Settings</a>
+            </div>
+        </footer>
+    </main>
+
+{% endblock %}

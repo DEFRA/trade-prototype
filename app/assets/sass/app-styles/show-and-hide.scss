@@ -1,0 +1,3 @@
+.radio-conditional:not(:checked) ~ .content-conditional{
+    display: none;
+}

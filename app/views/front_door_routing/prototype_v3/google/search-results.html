@@ -1,0 +1,217 @@
+{% extends "layout_app--google.html" %}
+
+{% block content %}
+
+<div class="google google-results">
+<header id = "page-header">
+    <img id = "google-logo" src = "../../../public/images/google/googlelogo.png" alt = "the google logo">
+    <div id = "search-bar">
+        <input id = "search-input-text" type = "text" name = "search query">
+        <button id = "clear-search-button"></button>
+        <a id = "voice-input-link" href = #>
+            <button id = "voice-input-button"></button>
+        </a>
+        <div id = "search-icon"></div>
+    </div>
+    <div id = "profile-buttons">
+        <a id = "apps-link" href = #>
+            <div id = "apps-button">
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+                <div class = "app-square"></div>
+            </div>
+        </a>
+        <button id = "sign-in-button">Sign in</button>
+    </div>
+    <nav id = "navbar">
+        <a class = "nav-link" href = #>
+            <div id = "alle-box" class = "nav-link-box">
+                <svg id = "alle-icon" class = "nav-link-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path></svg>
+                <span id = "alle-text" class = "nav-link-text">All</span>
+            </div>
+        </a>
+        <a class = "nav-link" href = #>
+            <div class = "nav-link-box">
+                <svg class = "nav-link-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"></path></svg>
+                <span class = "nav-link-text">News</span>
+            </div>
+        </a>
+        <a class = "nav-link" href = #>
+            <div class = "nav-link-box">
+                <svg class = "nav-link-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path></svg>
+                <span class = "nav-link-text">Shopping</span>
+            </div>
+        </a>
+        <a class = "nav-link" href = #>
+            <div class = "nav-link-box">
+                <svg class = "nav-link-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z"></path></svg>
+                <span class = "nav-link-text">Images</span>
+            </div>
+        </a>
+        
+        <a class = "nav-link" href = #>
+            <div class = "nav-link-box">
+                <svg class = "nav-link-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z" fill-rule="evenodd"></path></svg>
+                <span class = "nav-link-text">Video's</span>
+            </div>
+        </a>
+    
+        <a class = "nav-link" href = #>
+            <div class = "nav-link-box">
+                <div id = "meer-icon">
+                    <div class = "meer-icon-square"></div>
+                    <div class = "meer-icon-square"></div>
+                    <div class = "meer-icon-square"></div>
+                </div>
+                <span class = "nav-link-text">More</span>
+            </div>
+        </a>
+        <a class = "nav-link right" href = #>
+            <div class = "nav-link-box">
+                <span class = "nav-link-icon"></span>
+                <span class = "nav-link-text">Settings</span>
+            </div>
+        </a>
+        <a class = "nav-link right" href = #>
+            <div class = "nav-link-box">
+                <span class = "nav-link-icon"></span>
+                <span class = "nav-link-text">Tools</span>
+            </div>
+        </a>
+    </nav>
+</header>
+<main>
+    <p id = "search-summary">About 2,080,000,000 results (0.37 seconds) </p>
+
+    <div id = "search-results">
+
+        <div class="page-result">
+            <p><a class="page-link" href="../how_to_trade">Find out how to trade animals, plants and agricultural products with other countries from 2021</a></p>
+            <p><a class="page-url" href="../how_to_trade">https://www.gov.uk/trade-animals-2021</a></p>
+            <p class="page-snippet">There will be new rules for importing and exporting animals, plants, and animal and plant products with other countries from 1 January 2021. Find out how they affect you.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/04/20</p>
+        </div>
+
+        <div class="page-result">
+            <p><a class="page-link" href="#">Importing animals and animal products in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+
+        <div class="page-result">
+            <p><a class="page-link" href="#">Exporting animals and animal products in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+
+        <div class="page-result">
+            <p><a class="page-link" href="#">Importing food and feed in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+
+        <div class="page-result">
+            <p><a class="page-link" href="#">Exporting food and feed in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+
+        <div class="page-result">
+            <p><a class="page-link" href="#">Importing plants in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+        <div class="page-result">
+            <p><a class="page-link" href="#">Exporting plants in 2021</a></p>
+            <p><a class="page-url" href="#">https://www.gov.uk</a></p>
+            <p class="page-snippet"><b>GOV.UK</b> The place to find government services and information - Simpler, clearer, faster.</p>
+            <p class="page-last-visit">You've visited this page 4 times. Last visit: 17/02/20</p>
+        </div>
+
+    </div>
+
+    <div id = "result-page-nav">
+        <div id = "page-nav-G-container">
+            <div id = "page-nav-G"></div>
+        </div>
+        <div id = "current-page">
+            <div id = "current-page-number"></div>
+            <p>1</p>
+        </div>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>2</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>3</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>4</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>5</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>6</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>7</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>8</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>9</p>
+        </a>
+        <a class = "page-nav-link" href = #>
+            <div class ="page-nav-number"></div>
+            <p>10</p>
+        </a>
+        <div id = "page-nave-gle-container">
+            <div id = "page-nav-gle"></div>
+        </div>
+        <a class = "page-nav-link" href = #>
+            <div id = "page-nav-next-arrow"></div>
+            <p>Volgende</p>
+        </a>
+    </div>
+    <footer>
+        <div id = "footer-content">
+            <div id = "footer-info-top">
+                <div id = "location-icon"></div>
+                <span id = location class = "footer-text"><b>United Kingdom</b></span>
+                -
+                <span id = "based-on-address" class = "footer-text">From your Internet address</span>
+                -
+                <a id = "use-precise-location" class = "text-link footer-text footer-link" href = #>Use precise location</a>
+                -
+                <a id = "more-information" class = "text-link footer-text footer-link" href = #>Learn more</a>
+            </div>
+            <p id = "footer-links-bottom">
+                <a id = "privacy-link" class = "text-link footer-text footer-link" href = #>Help</a>
+                <a id = "terms-link" class = "text-link footer-text footer-link" href = #>Send feedback</a>
+                <a id = "settings-link" class = "text-link footer-text footer-link" href = #>Privacy</a>
+                <a id = "terms" class = "text-link footer-text footer-link" href = #>Terms</a>
+            </p>
+        </div>
+    </footer>
+</main>
+{% endblock %}

@@ -22,7 +22,8 @@ $govuk-assets-path: '/govuk/assets/';
 @import "app-styles/panels";    
 @import "app-styles/tables"; 
 @import "app-styles/width";
-@import "app-styles/search";  
+@import "app-styles/search"; 
+@import "app-styles/show-and-hide" ;
 
 //Google styles
 @import "app-styles/google.scss";  
