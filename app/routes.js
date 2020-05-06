@@ -135,7 +135,7 @@ router.post('/front_door_routing/prototype_v4/which_govuk_page', function(req, r
         res.redirect('https://www.gov.uk/guidance/exporting-and-importing-fish-if-theres-no-brexit-deal')
     }
     else if (commodity==="Horses") {
-        res.redirect('https://www.gov.uk/guidance/export-horses-and-ponies-special-rules')
+        res.redirect('/front_door_routing/prototype_v4/horses/horses-steps')
     }
     else{
         res.redirect('https://www.gov.uk/guidance/export-live-animals-special-rules')

@@ -1,0 +1,44 @@
+{% extends "layout_app.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What will the commodity be used for?</h1>
+
+      <form class="form" action="where_from" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="sort">
+            Select purpose
+          </label>
+          <select class="govuk-select" id="sort" name="purpose">
+            <option value="Approved_bodies">Approved bodies</option>
+            <option value="Breeding_production">Breeding/production</option>
+            <option value="Pets">Pets</option>
+            <option value="Registered_equidae">Registered equidae</option>
+            <option value="Slaughter">Slaughter</option>
+          </select>
+          </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+      <div class="results">
+
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
