@@ -148,8 +148,11 @@ router.post('/front_door_routing/prototype_v4/where_to-answer', function(req, re
     
     let where_from = req.session.data['country-from']
 
-    if (where_from==="Great Britain" || where_from==="United Kingdom") {
-        res.redirect('/front_door_routing/prototype_v4/where_to-international')
+    if (where_from==="Great Britain") {
+        res.redirect('/front_door_routing/prototype_v4/where_to-international_and_NI')
+    }
+    else if (where_from==="Northern Ireland") {
+        res.redirect('/front_door_routing/prototype_v4/where_to-international_and_GB')
     }
     else{
         res.redirect('/front_door_routing/prototype_v4/where_to-uk')

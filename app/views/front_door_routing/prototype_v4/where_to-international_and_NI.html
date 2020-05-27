@@ -22,6 +22,11 @@
             Select country or territory
           </label>
           <select class="govuk-select" id="sort" name="country-to">
+            <option selected disabled>Select</option>
+            <optgroup label="United Kingdom">
+              <option value="Northern Ireland">Northern Ireland</option>
+            </optgroup>
+            <optgroup label="Rest of the world">
               <option value="Afganistan">Afghanistan</option>
               <option value="Albania">Albania</option>
               <option value="Algeria">Algeria</option>
@@ -267,6 +272,7 @@
               <option value="Zaire">Zaire</option>
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
+            </optgroup>
           </select>
         </div>
 
