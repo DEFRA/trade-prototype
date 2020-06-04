@@ -8,10 +8,10 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         DEFRA Trade Platform: Front door prototypes
-        
+
       </h1>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -35,43 +35,230 @@
 
       <ul class="govuk-list govuk-list--bullet">
         <li>
-          <h3>
-            <a href="front_door_routing/prototype_v1/google/index.html">Prototype v1</a>
+          <h3 class="govuk-heading-m">
+            <a href="front_door_routing/prototype_v4/google/index.html">Prototype v4</a>
           </h3>
-          <p><b>User group - First time user - exisiting EU only trader, never needed to use a trade system (TRACES) before</b><br/>
-            Prototype journey to guide the user to the appropriate information for them to be able to trade after Jan 1st 2020</p>
-            <p>User journeys covered:</p>
+          <h4 class="govuk-heading-s">User details</h4>
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">User group</th>
+              <td class="govuk-table__cell">First time user</td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">User journey</th>
+              <td class="govuk-table__cell">User starts with google search, finds how to trade after Jan 2021. Brought through question flow to bring them to relevant, specific guide to their trade.</td>
+            </tr>
+          </table>
+          <h4 class="govuk-heading-s">Notes</h4>
+          <ul>
+            <li>Changed screen order so that transit comes after the start and end points.</li>
+            <li>Transit screen plays back choices from start and end point</li>
+            <li>Show search results of Orchids - link through to further details of each step.</li>
+          </ul>
+          <p>Content on start page:</p>
             <ul>
-              <li>Importing plants - use "Orchids" as commodity type</li>
-              <li>Exporting fish - use "Salmon" as commodity type</li>
-              <li>Exporting horses - user "Horses" as commodity type</li>
+              <li>settled on 'animals, plants and agricultural products' as this is used elsewhere in Defra for these types of commodities</li>
+              <li>high level list of in scope commodites</li>
+              <li>advance warning of what user will be asked to do</li>
             </ul>
+          <h4 class="govuk-heading-s">User flows</h4>
+          <table class="govuk-table">
+            <tr>
+              <th class="govuk-table__header">Importing plants</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Orchids" as commodity type</li>
+                  <li>from Taiwan</li>
+                  <li>to England</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting fish</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Salmon" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to Germany</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting horses</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Horses" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to United Arab Emirates</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </li>
+        
         <li>
-          <h3>
-            <a href="front_door_routing/prototype_v2/google/index.html">Prototype v2</a>
-          </h3>
-          <p><b>User group - First time user - exisiting EU only trader, never needed to use a trade system (TRACES) before</b><br/>
-            Improved prototype to show relevent action pages</p>
-            <p>User journeys covered:</p>
-            <ul>
-              <li>Importing plants - use "Orchids" as commodity type</li>
-              <li>Exporting fish - use "Salmon" as commodity type</li>
-              <li>Exporting horses - user "Horses" as commodity type</li>
-            </ul>
-        </li>
-        <li>
-          <h3>
+          
+          <h3 class="govuk-heading-m">
             <a href="front_door_routing/prototype_v3/google/index.html">Prototype v3</a>
           </h3>
-          <p><b>User group - First time user - exisiting EU only trader, never needed to use a trade system (TRACES) before</b><br/>
-            Improved prototype to show relevent action pages</p>
-            <p>User journeys covered:</p>
+          <h4 class="govuk-heading-s">User details</h4>
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">User group</th>
+              <td class="govuk-table__cell">First time user</td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">User journey</th>
+              <td class="govuk-table__cell">User starts with google search, finds how to trade after Jan 2021. Brought through question flow to bring them to relevant, specific guide to their trade.</td>
+            </tr>
+          </table>
+          <h4 class="govuk-heading-s">Notes</h4>
+          <p>Research showed that the user would also need to supply details about what countries the consignment would be transiting on its journey.</p>
+            
+          <h4 class="govuk-heading-s">User flows</h4>
+          <table class="govuk-table">
+            <tr>
+              <th class="govuk-table__header">Importing plants</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Orchids" as commodity type</li>
+                  <li>from Taiwan</li>
+                  <li>to England</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting fish</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Salmon" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to Germany</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting horses</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Horses" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to United Arab Emirates</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li>
+          
+          <h3 class="govuk-heading-m">
+            <a href="front_door_routing/prototype_v2/google/index.html">Prototype v2</a>
+          </h3>
+          <h4 class="govuk-heading-s">User details</h4>
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">User group</th>
+              <td class="govuk-table__cell">First time user</td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">User journey</th>
+              <td class="govuk-table__cell">User starts with google search, finds how to trade after Jan 2021. Brought through question flow to bring them to relevant, specific guide to their trade.</td>
+            </tr>
+          </table>
+          <h4 class="govuk-heading-s">Notes</h4>
+          <p>Updated the end point screens to the "step-by-step" pattern, similar to that used on learn to drive service</p>
+          <p>The content on the step-by-step page should be generated depending on the specific rules for the commodity and where it is being traded from and to.</p>
+          <h4 class="govuk-heading-s">User flows</h4>
+          <table class="govuk-table">
+            <tr>
+              <th class="govuk-table__header">Importing plants</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Orchids" as commodity type</li>
+                  <li>from Taiwan</li>
+                  <li>to England</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting fish</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Salmon" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to Germany</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting horses</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Horses" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to United Arab Emirates</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li>
+          
+          <h3 class="govuk-heading-m">
+            <a href="front_door_routing/prototype_v1/google/index.html">Prototype v1</a>
+          </h3>
+          <h4 class="govuk-heading-s">User details</h4>
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header">User group</th>
+              <td class="govuk-table__cell">First time user</td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">User journey</th>
+              <td class="govuk-table__cell">User starts with google search, finds how to trade after Jan 2021. Brought through question flow to bring them to relevant, specific guide to their trade that already exists on Gov.uk</td>
+            </tr>
+          </table>
+          <h4 class="govuk-heading-s">Notes</h4>
+          <p>First journey created off the 'cube' high level concept that all details about a trade can be worked out from: What's being traded, where from, and where to.</p>
+          <p>Content updates on start page:</p>
             <ul>
-              <li>Importing plants - use "Orchids" as commodity type</li>
-              <li>Exporting fish - use "Salmon" as commodity type</li>
-              <li>Exporting horses - user "Horses" as commodity type</li>
+              <li>more detailed list of in scope commodites</li>
+              <li>link for out of scope commodity
             </ul>
+          <h4 class="govuk-heading-s">User flows</h4>
+          <table class="govuk-table">
+            <tr>
+              <th class="govuk-table__header">Importing plants</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Orchids" as commodity type</li>
+                  <li>from Taiwan</li>
+                  <li>to England</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting fish</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Salmon" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to Germany</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="govuk-table__header">Exporting horses</th>
+              <td class="govuk-table__cell">
+                <ul>
+                  <li>use "Horses" as commodity type</li>
+                  <li>from Great Britain</li>
+                  <li>to United Arab Emirates</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </li>
       </ul>
 
@@ -82,17 +269,19 @@
       <ul class="govuk-list govuk-list--bullet">
         <li>
           <h3>
-            <a href="front_door_dashboard/prototype_v1/start.html">Prototype v1</a>
+            <a href="front_door_dashboard/prototype_v4/start.html">Prototype v4</a>
           </h3>
           <p><b>User group - Existing user - multi service user</b><br/>
-            Initial prototype created from SME, product owner and team input. Team consisted of members who have been working on trade projects for a number of years so have a broad trade understanding</p>
-        </li>
-        <li>
-          <h3>
-            <a href="front_door_dashboard/prototype_v2/start.html">Prototype v2</a>
-          </h3>
-          <p><b>User group - Existing user - multi service user</b><br/>
-            Expanding initial prototype to include content updates on the start-page</p>
+            Expanding initial prototype to include content updates on the start-page:</p>
+            <ul>
+              <li>examples of types of commodities</li>
+              <li>advance warning about Government Gateway and Defra ID</li>
+              <li>links for out of scope commodities</li>
+            </ul?
+            <ul>
+              <li>Update dashboard with "notification" panels</li>
+              <li>Add links to the imports and exports service search screens</li>
+            </ul>
         </li>
         <li>
           <h3>
@@ -106,13 +295,17 @@
         </li>
         <li>
           <h3>
-            <a href="front_door_dashboard/prototype_v4/start.html">Prototype v4</a>
+            <a href="front_door_dashboard/prototype_v2/start.html">Prototype v2</a>
           </h3>
-          <p><b>User group - Existing user - multi service user</b></p>
-            <ul>
-              <li>Update dashboard with "notification" panels</li>
-              <li>Add links to the imports and exports service search screens</li>
-            </ul>
+          <p><b>User group - Existing user - multi service user</b><br/>
+            Expanding initial prototype to include content updates on the start-page</p>
+        </li>
+        <li>
+          <h3>
+            <a href="front_door_dashboard/prototype_v1/start.html">Prototype v1</a>
+          </h3>
+          <p><b>User group - Existing user - multi service user</b><br/>
+            Initial prototype created from SME, product owner and team input. Team consisted of members who have been working on trade projects for a number of years so have a broad trade understanding</p>
         </li>
       </ul>
 

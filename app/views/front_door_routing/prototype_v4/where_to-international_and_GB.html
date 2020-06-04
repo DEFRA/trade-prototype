@@ -13,19 +13,18 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Where is the consignment coming from?</h1>
+      <h1 class="govuk-heading-xl">Where is the consignment going to?</h1>
+    
+      <form class="form" action="transit" method="post">
 
-      <form class="form" action="where_to-answer" method="post">
-        
         <div class="govuk-form-group">
           <label class="govuk-label" for="sort">
             Select country or territory
           </label>
-          <select class="govuk-select" id="sort" name="country-from">
+          <select class="govuk-select" id="sort" name="country-to">
             <option selected disabled>Select</option>
             <optgroup label="United Kingdom">
-              <option value="Great Britain">Great Britain</option>
-              <option value="Northern Ireland">Northern Ireland</option>
+              <option value="Northern Ireland">Great Britain</option>
             </optgroup>
             <optgroup label="Rest of the world">
               <option value="Afganistan">Afghanistan</option>

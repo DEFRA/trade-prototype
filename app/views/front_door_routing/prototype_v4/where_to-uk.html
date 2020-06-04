@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -15,16 +15,15 @@
 
       <h1 class="govuk-heading-xl">Where is the consignment going to?</h1>
       
-      <form class="form" action="which_govuk_page" method="post">
+      <form class="form" action="transit" method="post">
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="sort">
-            Select country
+            Select country or territory
           </label>
-          <select class="govuk-select" id="sort" name="sort">
-              <option value="England">England</option>
-              <option value="Scotland">Scotland</option>
-              <option value="Wales">Wales</option>
+          <select class="govuk-select" id="sort" name="country-to">
+              <option selected disabled>Select</option>
+              <option value="Great Britain">Great Britain</option>
               <option value="Northern Ireland">Northern Ireland</option>
           </select>
         </div>

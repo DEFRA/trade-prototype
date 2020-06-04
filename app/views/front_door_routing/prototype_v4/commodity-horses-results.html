@@ -1,0 +1,63 @@
+{% extends "layout_app.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">What are you trading?</h1>
+
+      <form class="form" action="where_from" method="post">
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="commodity">
+              Commodity code or description
+              <span class="govuk-hint">If you’re not sure of the commodity code, check <a href="https://www.gov.uk/guidance/finding-commodity-codes-for-imports-or-exports">how to find the right commodity code</a>.</span>
+              <span class="govuk-hint">A commodity description could be "minced meat".</span>
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="commodity" name="commodity-name" type="text" value="{{ data['commodity-name'] }}">
+          </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Commodity code</th>
+            <th scope="col" class="govuk-table__header">Commodity description</th>
+            <th scope="col" class="govuk-table__header"><span class="govuk-hidden">Select</span></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">0101</td>
+            <td class="govuk-table__cell">Live horses, asses, mules and hinnies</td>
+            <td class="govuk-table__cell"><a href="where_from.html">Select</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">02050020</td>
+            <td class="govuk-table__cell">Meat of horses, asses, mules or hinnies, fresh, chilled</td>
+            <td class="govuk-table__cell"><a href="where_from.html">Select</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">02050080</td>
+            <td class="govuk-table__cell">Meat of horses, asses, mules or hinnies, frozen</td>
+            <td class="govuk-table__cell"><a href="where_from.html">Select</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}
